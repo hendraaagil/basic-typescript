@@ -1,4 +1,13 @@
 "use strict";
+// String
 var nama = "Hendra";
 nama = "Agil";
-console.log(nama);
+// Number
+var umur;
+umur = 20;
+umur = 17;
+// Boolean
+var isMarried;
+isMarried = true;
+isMarried = false;
+console.log(nama, umur, isMarried);

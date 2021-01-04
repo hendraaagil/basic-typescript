@@ -1,5 +1,15 @@
+// String
 let nama: string = "Hendra";
-
 nama = "Agil";
 
-console.log(nama);
+// Number
+let umur: number;
+umur = 20;
+umur = 17;
+
+// Boolean
+let isMarried: boolean;
+isMarried = true;
+isMarried = false;
+
+console.log(nama, umur, isMarried);
