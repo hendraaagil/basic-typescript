@@ -12,4 +12,9 @@ let isMarried: boolean;
 isMarried = true;
 isMarried = false;
 
-console.log(nama, umur, isMarried);
+// Any
+let heroes: any = "Superman";
+heroes = 20;
+heroes = false;
+heroes = ["Superman", "Iroman", "Batman"];
+console.log(heroes.join(', '));
