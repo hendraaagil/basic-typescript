@@ -12,5 +12,5 @@ array3 = ['Agil', 'Umur:', 17, 'Menikah?', false];
 // Tuples
 var biodata;
 biodata = ['Karanganyar', 456];
-biodata = ['Solo', true];
-biodata = ['Matesih', 17, false];
+// biodata = ['Solo', true]; // error => item kedua boolean
+// biodata = ['Matesih', 17, false] // error => ada 3 item
