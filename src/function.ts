@@ -16,3 +16,12 @@ function printName(): void {
 }
 
 printName();
+
+// Tipe data pada argumen atau parameter
+
+function multiply(val1: number, val2: number): number {
+  return val1 * val2;
+}
+
+const result = multiply(2, 88);
+console.log(result);

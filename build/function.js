@@ -12,3 +12,9 @@ function printName() {
     console.log('Print Name!');
 }
 printName();
+// Tipe data pada argumen atau parameter
+function multiply(val1, val2) {
+    return val1 * val2;
+}
+var result = multiply(2, 88);
+console.log(result);
