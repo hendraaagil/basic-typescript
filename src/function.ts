@@ -25,3 +25,16 @@ function multiply(val1: number, val2: number): number {
 
 const result = multiply(2, 88);
 console.log(result);
+
+// Function sebagai tipe data
+
+type Age = number;
+let age: Age = 17;
+
+type Tambah = (val1: number, val2: number) => number;
+
+const Add: Tambah = (val1: number, val2: number): number => {
+  return val1 + val2;
+}
+
+console.log(Add(23, 43));
