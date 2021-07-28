@@ -27,16 +27,20 @@ User
   - Member
 */
 
-
 class Admin extends User {
   read: boolean = true;
   write: boolean = true;
   phone: string;
   private _email: string = '';
+  static getRoleName: string = 'Admin';
 
   constructor(phone: string, name: string, age: number) {
     super(name, age);
     this.phone = phone;
+  }
+
+  static getNameRole() {
+    return 'Hai';
   }
 
   getRole(): { read: boolean, write: boolean } {
@@ -59,14 +63,19 @@ class Admin extends User {
   }
 }
 
-let admin = new Admin('08989898989', 'Hendra Agil Syaputra', 17);
-admin.getName();
-admin.getRole();
-console.log(admin);
-admin.setName('Agilllll');
-console.log(admin.getName());
+// let admin = new Admin('08989898989', 'Hendra Agil Syaputra', 17);
+// admin.getName();
+// admin.getRole();
+// console.log(admin);
+// admin.setName('Agilllll');
+// console.log(admin.getName());
 
-console.log("==========================");
+// console.log("==========================");
 
-admin.email = 'hendraaagil@gmail.com';
-console.log(admin.email);
+// admin.email = 'hendraaagil@gmail.com';
+// console.log(admin.email);
+
+
+let admin = Admin.getRoleName;
+let adminn = Admin.getNameRole();
+console.log(adminn, ',', admin);
