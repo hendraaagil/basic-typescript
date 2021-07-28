@@ -45,3 +45,14 @@ const fullName = (firstName: string, lastName: string = "Agil"): string => {
 }
 
 console.log(fullName('Hendra'));
+
+// Optional parameter
+// Jika tipe return adalah number, maka tidak bisa menggunakan optional parameter
+// const getUmur = (val1: number, val2: number): number => {
+const getUmur = (val1: number, val2?: number): string => {
+  // return val1 + val2;
+  return val1 + ' ' + val2;
+}
+
+// console.log(getUmur(17, 8)); // 25
+console.log(getUmur(17)); // 17 undefined
