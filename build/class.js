@@ -41,10 +41,11 @@ User
 */
 var Admin = /** @class */ (function (_super) {
     __extends(Admin, _super);
-    function Admin() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function Admin(phone, name, age) {
+        var _this = _super.call(this, name, age) || this;
         _this.read = true;
         _this.write = true;
+        _this.phone = phone;
         return _this;
     }
     Admin.prototype.getRole = function () {
@@ -55,8 +56,9 @@ var Admin = /** @class */ (function (_super) {
     };
     return Admin;
 }(User));
-var admin = new Admin('Hendra Agil Syaputra', 17);
+var admin = new Admin('08989898989', 'Hendra Agil Syaputra', 17);
 console.log(admin.getName());
 console.log(admin.getRole());
+console.log(admin);
 admin.setName('Agilllll');
 console.log(admin.getName());
