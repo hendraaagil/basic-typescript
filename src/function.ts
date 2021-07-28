@@ -38,3 +38,10 @@ const Add: Tambah = (val1: number, val2: number): number => {
 }
 
 console.log(Add(23, 43));
+
+// Default parameter / argumen
+const fullName = (firstName: string, lastName: string = "Agil"): string => {
+  return firstName + ' ' + lastName;
+}
+
+console.log(fullName('Hendra'));

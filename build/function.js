@@ -23,3 +23,9 @@ var Add = function (val1, val2) {
     return val1 + val2;
 };
 console.log(Add(23, 43));
+// Default parameter / argumen
+var fullName = function (firstName, lastName) {
+    if (lastName === void 0) { lastName = "Agil"; }
+    return firstName + ' ' + lastName;
+};
+console.log(fullName('Hendra'));
