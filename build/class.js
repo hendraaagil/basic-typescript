@@ -45,6 +45,7 @@ var Admin = /** @class */ (function (_super) {
         var _this = _super.call(this, name, age) || this;
         _this.read = true;
         _this.write = true;
+        _this._email = '';
         _this.phone = phone;
         return _this;
     }
@@ -54,11 +55,29 @@ var Admin = /** @class */ (function (_super) {
             write: this.write
         };
     };
+    Object.defineProperty(Admin.prototype, "email", {
+        get: function () {
+            return this._email;
+        },
+        set: function (value) {
+            if (value.length < 5) {
+                this._email = 'Email kurang dari 5';
+            }
+            else {
+                this._email = value;
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
     return Admin;
 }(User));
 var admin = new Admin('08989898989', 'Hendra Agil Syaputra', 17);
-console.log(admin.getName());
-console.log(admin.getRole());
+admin.getName();
+admin.getRole();
 console.log(admin);
 admin.setName('Agilllll');
 console.log(admin.getName());
+console.log("==========================");
+admin.email = 'hendraaagil@gmail.com';
+console.log(admin.email);
