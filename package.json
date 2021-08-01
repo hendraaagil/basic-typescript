@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "rimraf build/ && tsc",
     "ts": "rimraf build/ && tsc -w",
-    "dev": "nodemon ./build/abstract.js"
+    "dev": "nodemon ./build/interface.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.6",
